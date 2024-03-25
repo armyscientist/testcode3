@@ -20,7 +20,7 @@ from my_package.my_other_module import *
 from my_package.subpackage.my_submodule import my_function
 
 # Define a function that uses the imported dependencies
-def hello_world():
+def hello_world2():
     """This function uses the imported dependencies to perform a task."""
     my_module.do_something()
     my_submodule.do_something_else()
@@ -29,8 +29,8 @@ def hello_world():
     my_submodule2.do_something()
     my_module2.do_something()
     my_other_module.do_something()
-    my_function()
-    my_function2()
+    hello_world2()
+    hello_world2()
 
 # Call the function
-my_function()
+hello_world2()
