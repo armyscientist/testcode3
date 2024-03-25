@@ -13,7 +13,7 @@ with open("dummy_code.py", "r") as f:
 tree = parser.parse(source_code)
 
 # Traverse the tree and extract information
-def visit(node):
+def updated_visit(node):
     if node.type == "function_definition":
         print(f"Function: {node.child(1).text}")
         for child in node.children:
