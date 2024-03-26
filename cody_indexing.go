@@ -1,4 +1,4 @@
-package app
+package this_is_go_package
 
 import (
 	"bufio"
@@ -30,7 +30,7 @@ import (
 
 // App is the struct that's instantiated from within main.go and it manages
 // bootstrapping and running the application.
-type App struct {
+type AppConstruct struct {
 	*common.Common
 	closers   []io.Closer
 	Config    config.AppConfigurer
