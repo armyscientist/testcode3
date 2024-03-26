@@ -1,4 +1,4 @@
-package this_is_a_go_package
+package this_is_another_go_package
 
 import (
 	"bufio"
