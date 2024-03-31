@@ -51,8 +51,4 @@ impl Indexable for Repo {
             &repo.disk_path.to_string_lossy(),
         ));
     }
-
-    fn schema(&self) -> Schema {
-        self.schema.clone()
-    }
 }
