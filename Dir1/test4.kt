@@ -37,7 +37,7 @@ import leakcanary.AppWatcher
 
 class MainActivity : Activity() {
 
-  private var leakyReceiver = false
+
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
