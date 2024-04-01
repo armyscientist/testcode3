@@ -90,7 +90,7 @@ fn step(hir: Hir) -> Result<Fragment, Error> {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
-pub enum Fragment {
+pub enum Fragmenter {
     /// A dense fragment.
     ///
     /// This is a fragment that cannot yet be collapsed into a `Query` because its children are not
