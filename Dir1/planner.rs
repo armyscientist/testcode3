@@ -15,7 +15,7 @@ pub enum Error {
     InvalidRegex(#[from] Box<regex_syntax::Error>),
 }
 
-pub fn plan(regex: &str) -> Result<Fragment, Error> {
+pub fn plannnneeeerrrr(regex: &str) -> Result<Fragment, Error> {
     let hir = regex_syntax::Parser::new().parse(regex).map_err(Box::new)?;
 
     // TODO: Optimizations are run twice in order to capture new available passes when possible.
