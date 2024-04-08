@@ -1,27 +1,6 @@
 use crate::agent::prompts;
 use std::str::FromStr;
 
-#[derive(Debug, Copy, Clone)]
-pub struct AnswerModel {
-    /// The name of this model according to tiktoken
-    pub tokenizer: &'static str,
-
-    /// The name of this model for use in the llm gateway
-    pub model_name: &'static str,
-
-    /// The number of tokens reserved for the answer
-    pub answer_headroom: usize,
-
-    /// The number of tokens reserved for the prompt
-    pub prompt_headroom: usize,
-
-    /// The number of tokens reserved for history
-    pub history_headroom: usize,
-
-    /// The system prompt to be used
-    pub system_prompt: fn(&str) -> String,
-}
-
 pub const GPT_3_5_TURBO_FINETUNED: AnswerModel = AnswerModel {
     tokenizer: "gpt-3.5-turbo-0613",
     model_name: "gpt-3.5-turbo-finetuned",
